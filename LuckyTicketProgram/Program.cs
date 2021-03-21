@@ -6,7 +6,8 @@ namespace LuckyTicketProgram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            LuckyTicket luckyTicket = new LuckyTicket(new DataValidation(), new StringOperations());
+            luckyTicket.ExecuteProgram();
         }
     }
 }
