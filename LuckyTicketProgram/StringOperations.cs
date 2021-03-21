@@ -27,19 +27,26 @@ namespace LuckyTicketProgram
             int countFirstPart = 0;
             int countSecondPart = 0;
             int iterationCounter = 0;
-
-            foreach (char symbol in numberTicket)
+            try
             {
-                if (numberTicket.Length / 2 > iterationCounter)
+                foreach (char symbol in numberTicket)
                 {
-                    countFirstPart += (int)char.GetNumericValue(symbol);
-                    iterationCounter++;
-                }
-                else
-                {
-                    countSecondPart += (int)char.GetNumericValue(symbol);
+                    if (numberTicket.Length / 2 > iterationCounter)
+                    {
+                        countFirstPart += (int)char.GetNumericValue(symbol);
+                        iterationCounter++;
+                    }
+                    else
+                    {
+                        countSecondPart += (int)char.GetNumericValue(symbol);
+                    }
                 }
             }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Error: "+ex.Message);
+            }
+
             if (countFirstPart == countSecondPart)
             {
                 Console.WriteLine(string.Format("\t{0} - Lucky ticket!", numberTicket));
