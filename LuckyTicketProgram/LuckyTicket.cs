@@ -48,7 +48,7 @@ namespace LuckyTicketProgram
             ConsoleKeyInfo keyPress;
             do
             {
-                Console.WriteLine("\t\t\t\tWelcome to the Lucky Ticket Program!\n\n\tEnter ticket number:");
+                Console.WriteLine("\n\t\t\t\tWelcome to the Lucky Ticket Program!\n\n\tEnter ticket number:");
                 string numberTicket = Console.ReadLine();
                 //Validate the entered data
                 if (dataValidation.IsValidData(numberTicket))

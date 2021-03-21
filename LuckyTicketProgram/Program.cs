@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 namespace LuckyTicketProgram
 {
     class Program

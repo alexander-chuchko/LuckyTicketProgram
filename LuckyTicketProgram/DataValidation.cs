@@ -8,7 +8,7 @@ namespace LuckyTicketProgram
         private Regex patternNumberTicket;
         public DataValidation()
         {
-            patternNumberTicket = new Regex(@"(^\d{4,8})");
+            patternNumberTicket = new Regex(@"(^[\d]{4,8})+$");
         }
         //The ticket number is a number that can be 4-8 digits
         public bool IsValidData(string numberTicket)
