@@ -76,7 +76,6 @@ namespace LuckyTicketProgram
             gameEndTime = DateTime.Now;
             //Call the method CalculateDuration
             CalculateDuration();
-            //Call the method ShowStatistics
             ShowStatistics();
         }
         public void CalculateDuration()
