@@ -86,7 +86,6 @@ namespace LuckyTicketProgram
         public void AddNumber(string numberTicket)
         {
             allNumberTicket.Add(numberTicket);
-
         }
     }
 }
